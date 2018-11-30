@@ -1,7 +1,8 @@
 FROM node:10-alpine
 
-RUN apt-get update && apt-get install -y \
+RUN apk add --update --no-cache \
+  python \
   python-dev \
-  python-pip
+  py-pip
 
 RUN pip install awscli --upgrade
