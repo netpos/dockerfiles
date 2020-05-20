@@ -1,4 +1,4 @@
-FROM openjdk:13-alpine
+FROM openjdk:8-alpine
 
 ENV MAVEN_VERSION 3.5.4
 ENV MAVEN_HOME /usr/lib/mvn
