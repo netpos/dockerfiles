@@ -11,4 +11,6 @@ RUN apk add --update --no-cache \
   maven \
   openssh \
   git \
+  jq \
+  gettext \
   && pip install awscli --upgrade
