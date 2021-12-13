@@ -11,3 +11,5 @@ RUN apt-get update \
     libpython-dev \
     git \
   && pip install awscli --upgrade
+
+ENV LOG4J_FORMAT_MSG_NO_LOOKUPS=true

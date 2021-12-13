@@ -7,3 +7,5 @@ RUN apk add --update --no-cache \
 RUN curl http://download.newrelic.com/newrelic/java-agent/newrelic-agent/current/newrelic-java.zip -o /tmp/newrelic.zip \
     && unzip /tmp/newrelic.zip -d /opt/ \
     && rm /tmp/newrelic.zip
+
+ENV LOG4J_FORMAT_MSG_NO_LOOKUPS=true

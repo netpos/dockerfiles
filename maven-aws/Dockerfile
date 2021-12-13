@@ -14,3 +14,5 @@ RUN apk add --update --no-cache \
   jq \
   gettext \
   && pip install awscli --upgrade
+
+ENV LOG4J_FORMAT_MSG_NO_LOOKUPS=true
