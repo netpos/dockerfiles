@@ -12,3 +12,5 @@ RUN apk add --update --no-cache \
   openssh \
   git \
   && pip install awscli --upgrade
+
+ENV LOG4J_FORMAT_MSG_NO_LOOKUPS=true
