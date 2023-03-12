@@ -4,4 +4,4 @@ RUN curl http://download.newrelic.com/newrelic/java-agent/newrelic-agent/current
     && unzip /tmp/newrelic.zip -d /opt/ \
     && rm /tmp/newrelic.zip
 
-ENV LOG4J_FORMAT_MSG_NO_LOOKUPS=true
+ENV NEW_RELIC_APPLICATION_LOGGING=false
